@@ -1,0 +1,45 @@
+$color-general: #212121;
+$color-paragraph: #757575;
+$color-accent: #2196f3;
+$color-back: #2f303a;
+$color-general-second: #ffffff;
+
+.body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+}
+.container-top {
+  background-color: $color-general-second;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-second {
+  background-color: $color-back;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  display: flex;
+  align-items: baseline;
+  padding: 0px 15px;
+}
