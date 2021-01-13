@@ -1170,6 +1170,11 @@ img {
 }
 
 /*portfolio-html*/
+.portfolio-container {
+  padding: 0px 15px;
+  width: 1200px;
+}
+
 .menu-nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1253,6 +1258,18 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
+}
+
+.portfolio-list-item:nth-child(3) {
+  margin-right: 0px;
+}
+
+.portfolio-list-item:nth-child(6) {
+  margin-right: 0px;
+}
+
+.portfolio-list-item:nth-child(9) {
+  margin-right: 0px;
 }
 
 .portfolio-link {
