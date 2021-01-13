@@ -9,6 +9,7 @@
 .footer-img {
   display: block;
   margin-bottom: 20px;
+  width: 145px;
 }
 .footer .footer-img {
   display: block;
@@ -28,6 +29,12 @@
 .footer-list {
   list-style: none;
 }
+.footer-item {
+  margin-bottom: 0px;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-item .footer-list-map,
 .footer-mail,
 .footer-tel {
@@ -40,6 +47,7 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-list-map,
 .footer-mail {
   color: $color-general-second;
