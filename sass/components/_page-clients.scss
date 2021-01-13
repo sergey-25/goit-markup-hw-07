@@ -7,7 +7,10 @@
   padding-bottom: 40px;
   padding-top: 40px;
   width: 1200px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+  justify-content: space-between;
 }
 
 .clients-title {
@@ -29,7 +32,7 @@
   list-style: none;
 }
 
-.clients-item {
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
 

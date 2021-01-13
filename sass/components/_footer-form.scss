@@ -1,5 +1,9 @@
 /* Footer - form*/
 
+.footer-box {
+  display: flex;
+  flex-direction: row;
+}
 .email-input {
   border-radius: 4px;
   width: 358px;
@@ -8,7 +12,7 @@
   padding-left: 16px;
   padding: 15px;
   border: 1px solid #757575;
-  margin-right: 8px;
+  margin-right: 12px;
 }
 
 .button-submit-footer {

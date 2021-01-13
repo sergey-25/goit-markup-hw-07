@@ -130,7 +130,8 @@
   width: 16px;
   height: 12px;
 
-  .header-mail:hover & {
+  .header-mail:hover &,
+  .header-mail:focus & {
     fill: $color-accent;
   }
 }
@@ -139,7 +140,8 @@
   width: 10px;
   height: 16px;
 
-  .header-tel:hover & {
+  .header-tel:hover &,
+  .header-tel:focus & {
     fill: $color-accent;
   }
 }

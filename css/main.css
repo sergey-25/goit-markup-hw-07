@@ -51,6 +51,9 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
   padding: 0px 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*Header*/
@@ -230,7 +233,8 @@ img {
   height: 12px;
 }
 
-.header-mail:hover .mail-icon {
+.header-mail:hover .mail-icon,
+.header-mail:focus .mail-icon {
   fill: #2196f3;
 }
 
@@ -240,7 +244,8 @@ img {
   height: 16px;
 }
 
-.header-tel:hover .mail-icon-tel {
+.header-tel:hover .mail-icon-tel,
+.header-tel:focus .mail-icon-tel {
   fill: #2196f3;
 }
 
@@ -563,7 +568,12 @@ img {
   padding-bottom: 40px;
   padding-top: 40px;
   width: 1200px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .clients-title {
@@ -587,7 +597,7 @@ img {
   list-style: none;
 }
 
-.clients-item {
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -740,10 +750,11 @@ img {
 
 .footer-list {
   list-style: none;
-  margin-right: 70px;
 }
 
-.footer-item a {
+.footer-item .footer-list-map,
+.footer-mail,
+.footer-tel {
   text-decoration: none;
   font-family: Roboto;
   font-style: normal;
@@ -754,15 +765,19 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-item:nth-child(1) a {
+.footer-list-map,
+.footer-mail {
   color: #ffffff;
-}
-
-.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-item:hover a {
+.footer-list-map:hover, .footer-list-map:focus,
+.footer-mail:hover,
+.footer-mail:focus {
+  color: #2196f3;
+}
+
+.footer-tel:hover, .footer-tel:focus {
   color: #2196f3;
 }
 
@@ -771,6 +786,7 @@ img {
   width: 206px;
   height: 80px;
   margin-right: 93px;
+  margin-left: 70px;
 }
 
 .link-down-title {
@@ -831,6 +847,16 @@ img {
 }
 
 /* Footer - form*/
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .email-input {
   border-radius: 4px;
   width: 358px;
@@ -838,7 +864,7 @@ img {
   padding-left: 16px;
   padding: 15px;
   border: 1px solid #757575;
-  margin-right: 8px;
+  margin-right: 12px;
 }
 
 .button-submit-footer {

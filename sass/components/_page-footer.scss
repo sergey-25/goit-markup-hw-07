@@ -27,9 +27,10 @@
 }
 .footer-list {
   list-style: none;
-  margin-right: 70px;
 }
-.footer-item a {
+.footer-item .footer-list-map,
+.footer-mail,
+.footer-tel {
   text-decoration: none;
   font-family: Roboto;
   font-style: normal;
@@ -39,21 +40,27 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-item:nth-child(1) a {
+.footer-list-map,
+.footer-mail {
   color: $color-general-second;
-}
-.footer-item:not(:last-child) {
   margin-bottom: 9px;
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
 }
-.footer-item:hover a {
-  color: $color-accent;
+.footer-tel {
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
 }
-
 .social-down {
   display: block;
   width: 206px;
   height: 80px;
   margin-right: 93px;
+  margin-left: 70px;
 }
 .link-down-title {
   display: block;
