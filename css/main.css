@@ -778,12 +778,19 @@ img {
 .footer-mail {
   color: #ffffff;
   margin-bottom: 9px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list-map:hover, .footer-list-map:focus,
 .footer-mail:hover,
 .footer-mail:focus {
   color: #2196f3;
+}
+
+.footer-tel {
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel:hover, .footer-tel:focus {
